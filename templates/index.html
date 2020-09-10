@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Summarizer</title>
+    <style>
+        textarea {
+            width: 60%;
+            padding: 10px;
+        }
+        p {
+            border: 2px solid blue;
+            width: 60%;
+            padding: 10px;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <div style="text-align: right;">
+        <a href="/">Text Summarizer</a>
+        <a href="/contact">Contact</a>
+    </div>
+    <h1>Text Summarizer</h1>
+    <form method="POST">
+        <textarea name="input_box">{{ input }}</textarea>
+        <button style="display:block;" type="submit" name="submit">
+            Summarize
+        </button>
+    </form>
+    <p>{{ output }}</p>
+</div>
+</body>
+</html>

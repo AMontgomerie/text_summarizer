@@ -1,5 +1,3 @@
-# Details
-
 This was built using Python, Flask, PyTorch, and Huggingface Transformers. 
 
 ## Model
@@ -7,5 +5,5 @@ The text summarization model is DistilBart which is a distilled version of BART.
 
 I used [a pretrained implementation of DistilBart](https://huggingface.co/sshleifer/distilbart-cnn-6-6) and its tokenizer from Huggingface.
 
-# Issues
+## Issues
 Although I used a distilled version of the model, it's still fairly large and so takes some time to load the first time a user attempts to summarize a text.
